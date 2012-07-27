@@ -1,0 +1,11 @@
+--- a/configure.ac
++++ b/configure.ac
+@@ -1,7 +1,7 @@
+ #                                               -*- Autoconf -*-
+ # Process this file with autoconf to produce a configure script.
+ 
+-AC_PREREQ([2.69])
++AC_PREREQ([2.68])
+ AC_INIT([oml2],[2.8.1],[oml-user@lists.nicta.com.au])
+ AM_INIT_AUTOMAKE([-Wall -Werror foreign])
+ AC_CONFIG_MACRO_DIR([m4])
