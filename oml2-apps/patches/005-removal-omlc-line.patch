@@ -1,0 +1,11 @@
+--- a/gpslogger/configure.ac
++++ b/gpslogger/configure.ac
+@@ -33,7 +33,7 @@ AC_CHECK_FUNCS([gethostbyname gettimeofd
+ #Checks for libraries.
+ missing_libs=""
+ 
+-AC_CHECK_LIB([oml2], [omlc_init], [AC_DEFINE([HAVE_LIBOML2], [1], [Define if liboml2 is installed.])], [missing_libs+=" liboml2"])
++# AC_CHECK_LIB([oml2], [omlc_init], [AC_DEFINE([HAVE_LIBOML2], [1], [Define if liboml2 is installed.])], [missing_libs+=" liboml2"])
+ AC_CHECK_LIB([gps], [gps_open], [AC_DEFINE([HAVE_LIBGPS], [1], [Define if libgps is installed.])], [missing_libs+=" libgps"])
+ 
+ # Let the user know we're missing required libraries, and don't generate the build system.
