@@ -45,8 +45,8 @@ define Build/InstallDev
 		$(1)/usr/include
 
 	$(CP) \
-        $(PKG_INSTALL_DIR)/usr/include/* \
-        $(1)/usr/include
+	        $(PKG_INSTALL_DIR)/usr/include/* \
+       		$(1)/usr/include/libsigar
 	
 	$(INSTALL_DIR) $(1)/usr/lib
 	$(CP) \
