@@ -1,0 +1,66 @@
+--- a/gpslogger/Makefile.am
++++ b/gpslogger/Makefile.am
+@@ -6,7 +6,7 @@ pkgdatadir = $(datadir)/$(installed_name
+ 
+ bin_PROGRAMS = gpslogger-oml2
+ gpslogger_oml2_SOURCES = gpslogger.c
+-gpslogger_oml2_LDADD = -loml2 -lgps -lm
++gpslogger_oml2_LDADD = -loml2 -lgps -lm -locomm -lxml2 -lz
+ 
+ pkgdata_DATA = $(appname).rb
+ 
+--- a/nmetrics/Makefile.am
++++ b/nmetrics/Makefile.am
+@@ -6,7 +6,7 @@ pkgdatadir = $(datadir)/$(installed_name
+ 
+ bin_PROGRAMS = nmetrics-oml2
+ nmetrics_oml2_SOURCES = nmetrics.c
+-nmetrics_oml2_LDADD = -loml2 -lsigar -lpopt
++nmetrics_oml2_LDADD = -loml2 -lsigar -lpopt -locomm -lxml2 -lz
+ nmetrics_oml2_CPPFLAGS = $(LIBSIGAR_CFLAGS)
+ 
+ pkgdata_DATA = $(appname).rb
+--- a/otg2/Makefile.am
++++ b/otg2/Makefile.am
+@@ -17,7 +17,7 @@ AM_CPPFLAGS = \
+ 	-I $(srcdir)/lib \
+ 	-DWITH_OML
+ 
+-otgrlibs = -lpthread libotg2.la
++otgrlibs = -lpthread libotg2.la -locomm -lxml2 -lz
+ 
+ bin_PROGRAMS = otg2-oml2 otr2-oml2
+ 
+--- a/ripwavemon/Makefile.am
++++ b/ripwavemon/Makefile.am
+@@ -6,7 +6,7 @@ pkgdatadir = $(datadir)/$(installed_name
+ 
+ bin_PROGRAMS = ripwavemon-oml2
+ ripwavemon_oml2_SOURCES = ripwavemon.c
+-ripwavemon_oml2_LDADD = -loml2 -lpopt
++ripwavemon_oml2_LDADD = -loml2 -lpopt -locomm -lxml2 -lz
+ 
+ pkgdata_DATA = $(appname).rb
+ 
+--- a/trace/Makefile.am
++++ b/trace/Makefile.am
+@@ -6,7 +6,7 @@ pkgdatadir = $(datadir)/$(installed_name
+ 
+ bin_PROGRAMS = trace-oml2
+ trace_oml2_SOURCES = trace.c
+-trace_oml2_LDADD = -loml2 -ltrace -lpopt
++trace_oml2_LDADD = -loml2 -ltrace -lpopt -locomm -lxml2 -lz
+ 
+ pkgdata_DATA = $(appname).rb
+ 
+--- a/wlanconfig/Makefile.am
++++ b/wlanconfig/Makefile.am
+@@ -6,7 +6,7 @@ pkgdatadir = $(datadir)/$(installed_name
+ 
+ bin_PROGRAMS = wlanconfig-oml2
+ wlanconfig_oml2_SOURCES = wlanconfig.c
+-wlanconfig_oml2_LDADD = -loml2 -locomm
++wlanconfig_oml2_LDADD = -loml2 -locomm -lxml2 -lz
+ 
+ pkgdata_DATA = $(appname).rb
+ 
