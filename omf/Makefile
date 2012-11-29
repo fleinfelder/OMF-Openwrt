@@ -9,7 +9,7 @@ MAJOR_MINOR_VERSION=5.4
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION)-$(PKG_SOURCE_VERSION).tar.gz
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_VERSION:=confine-5.4
-PKG_SOURCE_URL:=https://github.com/nathansamson/OMF.git
+PKG_SOURCE_URL:=https://github.com/confine-omf/OMF.git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 RUBY_LIB_VER:=1.9
