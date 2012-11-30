@@ -2,7 +2,7 @@ include $(TOPDIR)/rules.mk
 
 PKG_NAME:=omf
 PKG_VERSION:=5.4.2
-PKG_RELEASE:=1
+PKG_RELEASE:=1.1
 MAJOR_MINOR_VERSION=5.4
 
 # Tries to download from openwrt => obviously this does not work, 
