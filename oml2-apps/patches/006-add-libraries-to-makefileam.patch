@@ -9,17 +9,6 @@
  
  pkgdata_DATA = $(appname).rb
  
---- a/nmetrics/Makefile.am
-+++ b/nmetrics/Makefile.am
-@@ -6,7 +6,7 @@ pkgdatadir = $(datadir)/$(installed_name
- 
- bin_PROGRAMS = nmetrics-oml2
- nmetrics_oml2_SOURCES = nmetrics.c
--nmetrics_oml2_LDADD = -loml2 -lsigar -lpopt
-+nmetrics_oml2_LDADD = -loml2 -lsigar -lpopt -locomm -lxml2 -lz
- nmetrics_oml2_CPPFLAGS = $(LIBSIGAR_CFLAGS)
- 
- pkgdata_DATA = $(appname).rb
 --- a/otg2/Makefile.am
 +++ b/otg2/Makefile.am
 @@ -17,7 +17,7 @@ AM_CPPFLAGS = \

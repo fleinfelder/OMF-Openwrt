@@ -9,17 +9,6 @@
  AC_CHECK_LIB([gps], [gps_open], [AC_DEFINE([HAVE_LIBGPS], [1], [Define if libgps is installed.])], [missing_libs+=" libgps"])
  
  # Let the user know we're missing required libraries, and don't generate the build system.
---- a/nmetrics/configure.ac
-+++ b/nmetrics/configure.ac
-@@ -31,7 +31,7 @@ AC_CHECK_FUNCS([gethostbyname gettimeofd
- missing_libs=""
- 
- AC_CHECK_LIB([popt], [poptGetContext], [AC_DEFINE([HAVE_LIBPOPT], [1], [Define if libpopt is installed.])], [missing_libs+=" libpopt"])
--AC_CHECK_LIB([oml2], [omlc_init], [AC_DEFINE([HAVE_LIBOML2], [1], [Define if liboml2 is installed.])], [missing_libs+=" liboml2"])
-+# AC_CHECK_LIB([oml2], [omlc_init], [AC_DEFINE([HAVE_LIBOML2], [1], [Define if liboml2 is installed.])], [missing_libs+=" liboml2"])
- AC_CHECK_LIB([dl], [dlopen])
- AC_CHECK_LIB([sigar], [sigar_open], [AC_DEFINE([HAVE_LIBSIGAR], [1], [Define if libsigar is installed.])], [missing_libs+=" libsigar"])
- 
 --- a/otg2/configure.ac
 +++ b/otg2/configure.ac
 @@ -38,7 +38,7 @@ missing_libs=""
